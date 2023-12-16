@@ -6,6 +6,7 @@ const fs = require("fs"); //this package is for reading files and getting their 
 //const { Database } = require('quickmongo');
 //Creating the Discord.js Client for This Bot with some default settings ;) and with partials, so you can fetch OLD messages
 const keepAlive = require('./server')
+require("dotenv");
 const client = new Discord.Client({
   messageCacheLifetime: 60,
   fetchAllMembers: false,
@@ -41,7 +42,7 @@ client.cooldowns = new Discord.Collection(); //an collection for cooldown comman
   }
 });
 //login into the bot
-client.login(process.env.TOKEN);
+client.login(require("./botconfig/config.json").token);
 
 
 const Enmap = require("enmap")
