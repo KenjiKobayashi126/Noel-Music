@@ -1,0 +1,25 @@
+{
+  "prefix": "n!",
+  "ksoftapi": "",
+  
+  
+  "clientsettings": {
+    "nodes": [
+      {
+         "host": "localhost",
+         "port": 80,
+         "password": "lol",
+         "retryAmount": 10,
+         "retryDelay": 5000,
+         "maximumRetries": 100,
+         "secure": false
+       }
+     ]
+  },
+
+  "spotify": {
+    "clientSecret": "74cf68fb292a4222a893729066938d9a",
+    "clientID": "4d9da29efebc44e782c6b168388cc231"
+  }
+
+}
