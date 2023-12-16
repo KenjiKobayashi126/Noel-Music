@@ -2,3 +2,4 @@
 node_modules
 *.bat
 config.json
+botconfig/config.json
